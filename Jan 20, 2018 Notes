@@ -1,0 +1,39 @@
+Overview of the WWW
+www(world wide web) - invented by sir Tim Berners-Lee (1989)
+                    - for educational purpose (motivation)
+                    - "collection of web sources" web sources - texted-based resources
+                    - "application" to access web sources
+
+Sir Tim Berners-Lee (scientist) - CERN
+- HTTP
+- HTML
+- URL
+
+*hyper-media / hyperlinks
+
+web resources
+1. Static
+- already exist
+2. Dynamic
+- produced on the fly (ex. google search)
+
+Application
+1. web servers (ex. hosting) -> (request)
+2. clients (ex. browsers)(mobile)
+
+All of the above information are happening because of Internet(Internetwork)
+Inter - Across Boundaries
+Network - interconnection
+
+Spiders
+- an applicatio that crawls the web
+
+FTP - File Transfer Protocol
+
+Colleagues of www
+- Gopher
+
+DNS - Domain Name System
+
+Fiddler Web Debugger
+- web debugging proxy
