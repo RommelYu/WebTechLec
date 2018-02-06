@@ -1,0 +1,29 @@
+HTTP is a stateless communications protocol
+- Servers do not keep informations about clients in-between request
+
+HTTP provides support for other functionalities, such as:
+1. cache control
+2. Content Media Type (MIME) specification
+3. Language and Character set Specification
+- ex. different country, different language and characters
+4. Content/Transfer Codings
+- compression
+5. Content Negotiation
+6. Client-Server Protocol Negotiations
+7. Persistent Connections
+- 1 connection, 407 outputs
+8. Request pipelining / multiplexing
+9. Authentication / Authorization
+- to authenticate / to have authorization
+etc..
+
+HTTP Resource Addressing
+- Http resource are identified using URL (Uniform Resource Identifier)
+
+HTTP Request Message
+- Request Line (CRLF - Carriage Return, Line-Feed)
+    - Method
+    - Request
+- Message Headers (general, request, and/or entity headers)
+
+Message Body a.k.a Payload (optional)
