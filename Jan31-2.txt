@@ -1,0 +1,20 @@
+Method Properties
+
+1. Safe Methods - read-only
+>Get
+>Head
+>Option
+>Trace
+
+2. Idempotent Methods - Identical Request, Same output
+>Get
+>Head
+>Option
+>Trace
+>Put
+>Delete
+
+3.Cacheable Methods - Indicates that response to a method is allowed to be stored.
+>Get
+>Head
+>Post
