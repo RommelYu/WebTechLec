@@ -1,0 +1,48 @@
+HTTP Status Codes 
+Informational (1xx) 
+o 100 Continue
+o 101 Switching Protocols 
+
+Success (2xx) 
+o 200 OK 
+o 202 Accepted 
+o 203 Non-Authoritative Information 
+o 204 No Content 
+o 205 Reset Content 
+o 206 Partial Content 
+
+Redirection (3xx) 
+o 300 Multiple Choices 
+o 301 Moved Permanently 
+o 302 Found 
+o 303 See Other 
+o 304 Not Modified 
+o 305 Use Proxy 
+
+Client Error (4xx) 
+o 400 Bad Request 
+o 401 Unauthorized  
+o 402 Payment Required 
+o 403 Forbidden 
+o 404 Not Found 
+o 405 Method not Allowed 
+o 406 Not Acceptable 
+o 407 Proxy Authentication Required 
+o 408 Request Timeout 
+o 409 Conflict 
+o 410 Gone 
+o 411 Length Required 
+o 412 Precondition Failed 
+o 413 Request Entity Too Large 
+o 414 Request-URI Too Long 
+o 415 Unsupported Media Type 
+o 416 Request Range Not Satisfiable 
+o 417 Expectation Failed 
+
+ Server Error (5xx) 
+o 500 Internal Server Error 
+o 501 Not Implemented 
+o 502  Bad Gateway 
+o 503 Service Unavailable 
+o 504 Gateway Timeout 
+o 505 HTTP Version Not Supported 
