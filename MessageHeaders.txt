@@ -1,0 +1,54 @@
+HTTP Message Headers 
+eneral Header Fields 
+o Cache-control 
+o Connection 
+o Date o Pragma 
+o Trailer 
+o Transfer-encoding 
+o Upgrade 
+o Via 
+o Warning 
+
+Request Header Fields 
+o Accept 
+o Accept-charset 
+o Accept-encoding 
+o Accept-Language 
+o Authorization 
+o Expect 
+o From 
+o Host 
+o If-Match 
+o If-Modified-Since
+o If-None-Match 
+o If-Range
+o If-Unmodified-Since 
+o Max-forward 
+o Proxy-Authorization 
+o Range 
+o Referrer 
+o User-Agent 
+ 
+Response Header Fields 
+o Accept-Range 
+o Age 
+o E-Tag 
+o Location 
+o Proxy-Authenticate 
+o Retry-After 
+o Server 
+o Vary 
+o WWW-Authenticate
+
+Entity Header Fields 
+o Allow 
+o Content-encoding 
+o Content-language  
+o Content-length 
+o Content-location 
+o Content-MD5 
+o Content-range 
+o Content-type 
+o Expires 
+o Last Modified
+ 
