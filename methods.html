@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+<div class="container">
+<h1>HTTP Request Method</h1>
+<ul>
+	 <li>Standard Method</li>
+		  <span>&nbsp&nbsp o Get - transfer a current selected </span> <br>
+		  <span>&nbsp&nbsp o Head - identical to get, accept that the server does not send a message </span> <br>
+		  <span>&nbsp&nbsp o Post - request that the target resource perform resource - specific processing of
+		   presentation enclosed in the message body of the request</span> <br>
+				<span> &nbsp&nbsp • Query - typically provide as key = value pairs, with ampersand (&)separators between key/value pairs</span><br>
+			    <span> &nbsp&nbsp • Path - to resource (resolved relative to the document root on the server)</span><br>
+				<span> &nbsp&nbsp • Fragment Identifier</span><br>
+		  <span>&nbsp&nbsp o Put - create or replace the state of the target source
+			with the state defined by the presentation enclosed in the request message payload</span> <br>
+		  <span>&nbsp&nbsp o Delete - remove the association between the target resources and its
+			current functionality</span> <br>
+		  <span>&nbsp&nbsp o Options - allows to query about the server on what to do,
+		    request information about the communication</span> <br>
+		  <span>&nbsp&nbsp o Trace - request a remote, application – level loop –back of the request message
+		  (ie; request the recipient to echo back to the client the request message). Typically used for
+		  testing/diagnostics of the request/response chain </span> <br>
+		  <span>&nbsp&nbsp o Connect - requests the establishment of a tunnel to the destination origin server, 
+		  and if successful, there after restrict its behavior to blind – forwarding of packets, in both directions, 
+		  until tunnel is closed. </span> <br>
+
+	<li>Method Properties</li> 
+		<span> &nbsp&nbsp o  Safe Method - client does not request, and does not expect, any state change on the origin server as a result of 
+		  applying the method to a target source. GET,HEAD, OPTIONS, TRACE.</span><br>
+		<span> &nbsp&nbsp o  Idempotent Method – intended effect on the server of multiple identical requests with the methods is the same as the
+		  effect of a single such request. GET, HEAD, OPTIONS, TRACE, PUT DELETE </span><br>
+		<span> &nbsp&nbsp o  Cacheable Method – indicates that the response to a method is allowed to be stored for future use. GET, HEAD, POST</span><br>
+		</ul>
+		</div>
+    </body>
+</html>
