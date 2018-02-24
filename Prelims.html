@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebTech - Prelims</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+</head>
+<body>
+<img class="header" src="images/header1.jpg">
+
+<nav class="heading">
+  <li><a href="webtek2017.html"><i class="fa fa-home"></i> Home</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><i class="fa fa-sticky-note"></i> Notes</a>
+    <div class="dropdown-content">
+      <a href="Prelims.html">Prelim</a>
+      <a href="Midterms.html">Midterm</a>
+      <a href="Finals.html">Finals</a>
+    </div>
+  </li>
+  <li><a href="Team.html"><i class="fa fa-user"></i> Developer</a></li>
+    </nav>
+
+
+<h1 class="home"><div id="home"><br><a href="home"></a>Prelims</h1></center>
+
+	  	<section class="parallax1">
+			<div class="parallax-inner1">
+	<h2 titular="intro"> Introduction of the World Wide Web </h2>
+	
+<center><table titular="history">
+  <tr>
+    <th>Year</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1969</td>
+    <td>Four computers were linked up together, and the ARPANET was born, which later then became the Internet.</td>
+  </tr>
+  <tr>
+    <td>1971</td>
+    <td>The first email sent by Ray Tomlinson, who is known for introducing "@" sign as the locator in email address.</td>
+  </tr>
+  <tr>
+    <td>1989</td>
+    <td>The world Wide Web was invented by Sir Time Berners-Lee while working CERN in Switzerland.</td>
+  </tr>
+  <tr>
+    <td>1991</td>
+    <td>HTTP 0.9</td>
+  </tr>
+  <tr>
+    <td>1996</td>
+    <td>HTTP 1.0</td>
+  </tr>
+  <tr>
+    <td>1998-1999, 2014</td>
+    <td>HTTP 1.1</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>HTTP 2</td>
+  </tr>
+</table> </center></section></div>
+<center>
+	
+
+	<h2 titular="mclaren"> What is HTTP based on? </h2>
+		<section class="parallax5">
+			<div class="parallax-inner1">
+			
+	<p>HTTP runs on top of TCP/IP using port 80 by default, TCP port 443 is for HTTPS. It is based on client server architecture.</p>
+	<p> HTTP is based on a <i>client-server architecture</i>, wherein its entities are clients, with their user-agents such as web browsers, web crawlers and other end user tools and applications, and as with servers, such as origin servers, proxy agents (http://10.10.33.254), gateways and tunnels. </p>
+	
+	<p> HTTP uses a <i>request-response standard protocol</i>, wherein the client sends an HTTP request message to the server, after which it processes the request and replies with an HTTP response message. </p>
+	
+	<p> HTTP is a stateless communications protocol (pull protocol, also known as <i>polling</i>, which refreshes at regular intervals, push is later introduced by HTTP 2.0). Servers do <i>not</i> keep information about clients in between requests.</p>
+	
+	<p> HTTP provides support for other functionalities, such as... </p>
+	<ul titular="lit">
+		<li> cache control </li> </br>
+		<li> content media type specification (MIME) </li> </br>
+		<li> language and character set specification </li> </br>
+		<li> content/transfer codings </li> </br>
+		<li> content negotiation </li> </br>
+		<li> client-server protocol negotiations </li> </br>
+		<li> persistent connections </li> </br>
+		<li> request pipelining </li> </br>
+		<li> authentication/authorization </li> </br>
+	</ul></section></div>
+	
+	<h2 titular="mclaren"> HTTP Resource Addressing </h2>
+		<section class="parallax1">
+			<div class="parallax-inner1">
+			
+	<p>-HTTP resouces are identified using URI, or , more, specifically, HTTP URL</p>
+	<img class="url" src="images/urlcomponents.jpg">
+	</section></div>
+	<h2 titular="mclaren"> HTTP Request Message </h2>
+				<section class="parallax1">
+			<div class="parallax-inner1">
+		<ul titular="lits">
+			<li>Request Line (CRLF-terminated line of 3-space separated values)</li><br>
+				<center>
+				<table>
+					<tr>
+						<th>Line Part</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>Methods</th>
+						<th>It indicates the method to be performed on the resource identified by the Request-URI. Case-sensitive.</th>
+					</tr>
+					<tr>
+						<th>Request URI</th>
+						<th>The Request-URI is a Uniform Resource Identifier and identifies the resource upon which to apply the request.</th>
+					</tr></table><br>
+		</center>
+			<li>Message Headers (general requests and/or entity headers)</li><br>
+				<ul class = "trial">
+					<li>HTTP 1.1 requires at least the Host request header to be provided</li><br>
+				</ul>
+			<li>Empty Line (CRLF)</li><br>
+			<li>Message Body, aka. payload (optional)</li><br><br>
+			</section></div>
+			<h2 titular="mclaren"> HTTP Request Methods </h2>
+				<section class="parallax1">
+			<div class="parallax-inner1">
+			
+				<center><table>
+							<tr>
+								<th>Method</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<th>OPTIONS (safe, indempotent)</th>
+								<th>Represets a request for information about the communication options availbale on the request/responsse chian identified by the Request-URI.</th>
+							</tr>
+							<tr>
+								<th>GET (safe, indempotent)</th>
+								<th>Transfers a  current selected representation of the resouce identified by the request URI: the retrieved resource is returned in the message body of the response as an entity</th>
+							</tr>
+							<tr>
+								<th>HEAD (safe, indempotent)</th>
+								<th>The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response.</th>
+							</tr>
+							<tr>
+								<th>POST (unsafe)</th>
+								<th>Used to request that the origin server accept the entity enclosed int he request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</th>
+							</tr>
+							<tr>
+								<th>PUT (unsafe, indempotent)</th>
+								<th>Requests that the enclosed entity be stored under thge supplied Request-URI.</th>
+							</tr>
+							<tr>
+								<th>DELETE (unsafe)</th>
+								<th>Requests that the origin server delete the resource identified by the Request-URI.</th>
+							</tr>
+							<tr>
+								<th>TRACE (safe, indempotent)</th>
+								<th>Used to invoke a remote, application-layer-loop-back of the request message.</th>
+							</tr>
+							<tr>
+								<th>CONNECT</th>
+								<th>Requests the establishment of a tunnel to the destination origin server, and if successful thereafter restrict its behaiour to blind-forwarding of packets in both directions, until the tunnel is closed.</th>
+							</tr></li></table><br><br>
+							</section></div>
+							
+			<h2 titular="mclaren"> HTTP Header Fields </h2>
+					<section class="parallax1">
+			<div class="parallax-inner1">
+			<center> <div style="width: 70%;">
+				<h3>Request Header Fields</h3>
+					<li>Request headers contain more information about the resource to be fetched or about the client itself.</li><br> <br>
+						<ul class = "trial">
+							<li>Accept</li> <br>
+							<li>Accept-Charset</li><br>
+							<li>Accept-Encoding</li><br>
+							<li>Accept-Language</li><br>
+							<li>Authorization</li><br>
+							<li>Expect</li><br>
+							<li>From</li><br>
+							<li>Host</li><br>
+							<li>Max-Forwards</li><br>
+							<li>If-Match</li><br>
+							<li>If-Modified-since</li><br>
+							<li>If-Range</li><br>
+							<li>If-Unmodified-since</li><br>
+							<li>Proxy Authorization</li><br>
+							<li>Range</li><br>
+							<li>Referer</li><br>
+							<li>TE (Transfer-Encoding)</li><br>
+							<li>User-agent</li><br>
+						</ul><br>
+						
+				<h3>General Header Fields</h3>
+					
+					<li>General headers apply to both requests and responses but with no relation to the data eventually transmitted in the body.</li><br><br>
+						<ul class = "trial">
+							<li>Cache-Control</li> <br>
+							<li>Connection</li><br>
+							<li>Date</li><br>
+							<li>Pragma</li><br>
+							<li>Trailer</li><br>
+							<li>Transfer-Encoding</li><br>
+							<li>Upgrade</li><br>
+							<li>Via</li><br>
+							<li>Warning</li><br>
+						</ul><br>
+					
+				
+				<h3>Response Header Fields</h3>
+					<li>Response headers contain additional information about the response, like its location or about the server itself (name and version etc.).</li><br> <br>
+						<ul class = "trial">
+							<li>Accept-Ranges</li> <br>
+							<li>Age</li><br>
+							<li>E-Tag (Entity-Tag)</li><br>
+							<li>Location</li><br>
+							<li>Proxy Authenticate</li><br>
+							<li>Retry-After</li><br>
+							<li>Server</li><br>
+							<li>Set Cookie</li><br>
+							<li>Vary</li><br>
+							<li>WWW-Authenticate</li><br>
+						</ul><br>
+				
+				<h3>Entity Header Fields</h3>
+					<li>Entity headers contain more information about the body of the entity, like its content length or its MIME-type.</li><br> <br>
+						<ul class = "trial">
+							<li>Allow</li> <br>
+							<li>Content-Encoding</li><br>
+							<li>Content-Language</li><br>
+							<li>Content-Length</li><br>
+							<li>Content-Location</li><br>
+							<li>Content-MD5</li><br>
+							<li>Content-Range</li><br>
+							<li>Content-Type</li><br>
+							<li>Expires</li><br>
+							<li>Last-Modified</li><br>
+						</ul></center><br>
+		</ul></section></div>
+		</div>
+		
+	<center><h2 titular="mclaren"> HTTP Status Codes </h2></center>
+		<section class="parallax1">
+			<div class="parallax-inner1">
+			
+	<details>
+		<summary titular="statcd"> 1xx Informational </summary>
+		<center>
+			<table titular="statcd"> 
+					<tr>
+						<th>Status Code</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>100</th>
+						<th>Continue</th>
+					</tr>
+					<tr>
+						<th>101</th>
+						<th>Switching Protocols</th>
+					</tr>
+					<tr>
+						<th>102</th>
+						<th>Processing (WebDAV)</th>
+					</tr></table><br>
+		</center>
+	</details>
+	<details>
+		<summary titular="statcd"> 2xx Success </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>Status Code</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>200</th>
+						<th>OK</th>
+					</tr>
+					<tr>
+						<th>201</th>
+						<th>Created</th>
+					</tr>
+					<tr>
+						<th>202</th>
+						<th>Accepted</th>
+					</tr>
+					<tr>
+						<th>203</th>
+						<th>Non-Authoritative Information</th>
+					</tr>
+					<tr>
+						<th>204</th>
+						<th>No Content</th>
+					</tr>
+					<tr>
+						<th>205</th>
+						<th>Reset Content</th>
+					</tr>
+					<tr>
+						<th>206</th>
+						<th>Partial Content</th>
+					</tr>
+					<tr>
+						<th>207</th>
+						<th>Multi-Status (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>208</th>
+						<th>Already Reported (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>226</th>
+						<th>IM Used</th>
+					</tr></table><br>
+		</center>
+	</details>
+	<details>
+		<summary titular="statcd"> 3xx Redirection </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>Status Code</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>300</th>
+						<th>Multiple Choices</th>
+					</tr>
+					<tr>
+						<th>301</th>
+						<th>Moved Permanently</th>
+					</tr>
+					<tr>
+						<th>302</th>
+						<th>Found</th>
+					</tr>
+					<tr>
+						<th>303</th>
+						<th>See Other</th>
+					</tr>
+					<tr>
+						<th>304</th>
+						<th>Not Modified</th>
+					</tr>
+					<tr>
+						<th>305</th>
+						<th>Use Proxy</th>
+					</tr>
+					<tr>
+						<th>307</th>
+						<th>Temporary Redirect</th>
+					</tr>
+					<tr>
+						<th>308</th>
+						<th>Permanent Redirect (experimental)</th>
+					</tr></table><br>
+		</center>
+	</details>
+	<details>
+		<summary titular="statcd"> 4xx Client Error </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>Status Code</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>400</th>
+						<th>Bad Request</th>
+					</tr>
+					<tr>
+						<th>401</th>
+						<th>Unauthorized</th>
+					</tr>
+					<tr>
+						<th>402</th>
+						<th>Payment Required</th>
+					</tr>
+					<tr>
+						<th>403</th>
+						<th>Forbidden</th>
+					</tr>
+					<tr>
+						<th>404</th>
+						<th>Not Found</th>
+					</tr>
+					<tr>
+						<th>405</th>
+						<th>Method Not Allowed</th>
+					</tr>
+					<tr>
+						<th>406</th>
+						<th>Not Acceptable</th>
+					</tr>
+					<tr>
+						<th>407</th>
+						<th>Proxy Authentication Required</th>
+					</tr>
+					<tr>
+						<th>408</th>
+						<th>Request Timeout</th>
+					</tr>
+					<tr>
+						<th>409</th>
+						<th>Conflict</th>
+					</tr>
+					<tr>
+						<th>410</th>
+						<th>Gone</th>
+					</tr>
+					<tr>
+						<th>411</th>
+						<th>Length Required</th>
+					</tr>
+					<tr>
+						<th>412</th>
+						<th>Precondition Failed</th>
+					</tr>
+					<tr>
+						<th>413</th>
+						<th>Request Entity Too Large</th>
+					</tr>
+					<tr>
+						<th>414</th>
+						<th>Request-URI Too Long</th>
+					</tr>
+					<tr>
+						<th>415</th>
+						<th>Unsupported Media Type</th>
+					</tr>
+					<tr>
+						<th>417</th>
+						<th>Expectation Failed</th>
+					</tr></table><br>
+		</center>
+	</details>
+		<details>
+		<summary titular="statcd"> 5xx Server Error </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>Status Code</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<th>500</th>
+						<th>Internal Server Error</th>
+					</tr>
+					<tr>
+						<th>501</th>
+						<th>Not Implemented</th>
+					</tr>
+					<tr>
+						<th>502</th>
+						<th>Bad Gateway</th>
+					</tr>
+					<tr>
+						<th>503</th>
+						<th>Service Unavailable</th>
+					</tr>
+					<tr>
+						<th>504</th>
+						<th>Gateway Timeout</th>
+					</tr>
+					<tr>
+						<th>505</th>
+						<th>HTTP Version Not Supported</th>
+					</tr>
+					<tr>
+						<th>506</th>
+						<th>Variant Also Negotiates (Experimental)</th>
+					</tr>
+					<tr>
+						<th>507</th>
+						<th>Insufficient Storage (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>508</th>
+						<th>Loop Detected (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>509</th>
+						<th>Bandwidth Limit Exceeded (Apache)</th>
+					</tr>
+					<tr>
+						<th>510</th>
+						<th>Not Extended</th>
+					</tr>
+					<tr>
+						<th>511</th>
+						<th>Network Authentication Required</th>
+					</tr>
+					<tr>
+						<th>598</th>
+						<th>Network read timeout error</th>
+					</tr>
+					<tr>
+						<th>599</th>
+						<th>Network connect timeout error</th>
+					</tr></table><br>
+		</center>
+	</details>
+</div>
+</section>
+
+<footer >
+	<div class="social" >
+		<p>
+	<img id="insta" src="images/Instagram.png" width="35" height="35" alt="insta">
+</a>
+	<img id="twitter" src="images/Twitter.png" width="35" height="35" alt="twitter">
+</a>
+	<img id="fb" src="images/Facebook.png" width="35" height="35" alt="fb">
+</a>
+	<img id="weheart" src="images/Github.png" width="35" height="35" alt="weheart">
+</a><br><br>
+			All rights reserved &copy; GROUP 5 - WEB SYSTEMS AND TECHNOLOGIES 2018
+			</p>
+		</div>
+</footer>
+</body>
+</html>
