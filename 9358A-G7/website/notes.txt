@@ -1,0 +1,194 @@
+ -----------------PRELIMS-----------------
+INTERNET
+	-Inter + Network
+	*Inter - crossing bounderies
+	*Network - connection
+	1969-internet born day
+	ARPANET-the world's first operational packet switching network
+	1971-first email sent by Ray Tomlinson
+		Tomlinson is known for introducing "@" sign as the locator in email addresses
+
+	1989-the year the world wide web was invented
+	Invented by Sir Tim Berners-Lee while while working CERN in Switzerland
+	Tim had written three fundamental technologies
+		*HTML
+		*HTTP - use to access resources(hypertext/hypermedia)
+		*URL
+	IEIF - Internet Engineer Task Force
+
+World Wide Web - application that uses the infrastructures provided by the internet.
+HTTP - jointly developed by W3C and the IETF
+
+Original HTTP in 1991
+HTTP 0.9
+HTTP 1.0 (RFC 1945, May 1996)
+HTTP 1.1 (RFC 2068 January 1998, RFC 2616 June 1999, RFC 7230-7235 Jun 2014)
+HTTP 2 (RFC 7540 May 2015)
+
+HTTP runs on top of TCP/IP using TCP port 80 by default, TCP port 443 for HTTPS (HTTP over SSL/TLS)
+HTTP is based on client srever architecture
+HTTPS - "encrypt" meaning all communication between your browser and wesite are encrypted.
+
+Clients A.K.A user agents(UA)
+	-web browser, web crawlers/spiders, end user tools and apps
+Servers:
+	-origin server
+	-proxy srver, gateway, tunnels
+
+HTTP uses a request-response standard protocol
+	- the client sends an HTTP request message to server
+	- the server processes the request and replies with and HTTP response mesage
+HTTP is stateless communication protocol
+	- servers do not keep information about clients in-between requests
+HTTP provides support for other functionalities, such as:
+	-cache control
+	-content media type (MIME) specification
+	-language and characters set specification
+	-content/transfer codings
+	-content negotiation
+	-client-server protocol negotiations
+	-persistent connections
+		1. send a connection
+		2. send request
+			open..dont close
+		3. wait
+		4. close
+	-request pipelining
+		*one request at a time
+	-authentication/authorization
+
+HTTP RESOURCE ADDRESSING
+	-HTTP resouces are identified using URI, or , more, spicifically, HTTP URL
+	*path to resource (resolved relative to the document root on the server)
+	*query
+		/info/profile.php?id=1234#addr
+		-may be URL encoded	
+	*fragment Identifier
+
+HTTP REQUEST MESSAGE
+	-Request line (CRLF - terminated line consisting of 3 space separated values)
+		1. Method
+		2. Request URI
+		3. HTTP Protocol Version
+	-Message Header (general, request and/or entity headers)
+	-Empty Line (CRLF)`
+	-Message body a.k.a payload(optional)
+
+HTTP RESPONSE MESSAGE
+	-Status line (CRLF terminated the consisting of the space separated values)
+		1. HTTP protocol version
+		2. Status Code
+		3. Reason Phrase
+	-Empty line
+	-Message body (optional)
+
+Standard Methods {GET,HEAD,PUT,POST,DELETE,OPTIONS,TRACE,CONNECT}
+
+HTTP REQUEST METHOD
+
+	GET
+		-Transfers a  current selected representation of the resouce identified by the request URI: the retrieved resource is returned in the message body of the response as an entity
+		-most commonly used HTTP method
+	HEAD
+		-same as GET, except that the entity is not included in the response(returns only the status line and header
+		-retrived metadata about the entity implied by the request without transferring the entity itself(e.g., to test link validity or resource modification)
+	POST
+		-submit data to the server
+		-perform resource specific processing of the entities inclosed in the message body
+	PUT
+		-store the enclosed  entity inside the message body under the specified request URI.
+	TRACE
+		-request a loop back of the request message
+		-used for testing/diagnostics of the request/response chain.
+	CONNECT
+		-request the establishment of a tunnel to teh destinaion origin server, and if successful thereafter restrict its behaviour to blind-forwarding of packets in both directions, until the tunnel is closed
+
+	GENERAL HEADER FIELDS
+
+	CACHE-CONTROL
+		:general-header field is used to specify directives for caching mechanisms in both, requests and responses. (para di masave yung information i.e. when you are logging into your social media and bank accounts)
+	CONNECTION
+		:used to establish persistent connections.
+	DATE
+		:date the request was generated
+	PRAGMA
+		:generic directive
+	TRAILER
+		:Trailer is like a header but it is provided after the data. 
+	TRANSFER-ENCODING
+		: divide data into chunks to know the content length in bytes.
+
+
+
+
+-----------------MIDTERMS-----------------
+HTML - Hypertext Markup Language us ed to create a webpage.
+     - designed specifically for content and structure
+     - developed by Tim Berners-Lee
+
+	*webpage - electronic document
+
+	*HTML - structure and content
+	*CSS - aesthetic/presentation
+	*JS - behavioral
+
+     HTML 1.0 - very premitive
+     HTML 2.0 - publish with actual standard
+     HTML 3.0 - W3c Recommendation
+     HTML 4.0 W3C Recommendation
+     HTML 4.01 -1999
+	*3 versions
+	       -strict
+	        -transitional
+	        -frameset
+     HTML 5.0
+     HTML 5.1
+
+    Two Ways of Rendering
+	-standars
+	-quirks
+
+CSS - Cascading Style Sheet
+    - language used to specify the presentation aspects(e.g. layout and formatting)
+    - developed by Hakon Wium Lee(CHSS) and Bert Bos (SSP)
+
+CSS Rule Precedence
+*by origin and importance
+	>useragent important declarations
+	>user important declarations
+	>author important declarations
+	>author normal declarations
+	>user normal declarations
+	>user agent normal declarations
+*by specificity
+	>inline style
+	>number of ID selectors
+	>number of class selectors, attribute selectors, and pseudo classes
+	>number of type selectors and pseudo elements
+*by order	- meaning the later the declaration, the higher the priority
+
+*CSS Declaration
+	>properties
+		-shorthand properties
+		-vendor-specific extensions(a.k.a vendor prefixes)
+		-example: webkit_transition
+	>values
+		-keywords
+		-numbers
+		-dimensions
+			-length-units
+			-font-relative: em, ex,ch,rem
+			-viewport percentage: vm,vh,vmin,vmax
+			-absolute lengths: cm,mm,q,in,pt,pc,px
+			-angle untis: deg,grad,rad
+			-durations units: s,ms
+			-frequency units: hz,khz
+			-resolution units: dpi,dpcm,dppx
+		-percentages
+		-URL and URIs
+		-color
+		-strings
+		-functions: calc(),attr(),counter(),counters(),linear-gradient()
+
+*CSS Preprocessors, CSS Framework  ---allows you to extend capability of CSS
+	-Sass, Less, 960 Grid System, Bootstrap, Foundation
