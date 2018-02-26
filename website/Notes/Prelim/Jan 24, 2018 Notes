@@ -1,0 +1,40 @@
+HTTP(Hypertext Transfer Protocol)
+- Application layer communications protocol used to access resources(hypertext/hypermedia) on the world wide web
+- invented by Time Berners-Lee at CERN in 1989
+- jointly developed by the W3C and the IETF
+
+W3C- World Wide Web Consortium
+IETF -Internet Engineering Task Force
+
+Version History:
+- HTTP 0.9 (1991)
+- HTTP 1.0 (RFC 1945, May 1996)
+- HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 June 1999), RFC 7230-7235, June 2014
+
+RFC 2616
+- Better to read because it has almost everything
+
+RFC 7540
+HTTP 1.1 -> Persistent Connection
+HTTP 2.0 -> SPDY
+
+HTTP FUNDAMENTALS
+- HTTP typically runs on top of TCP/IP, using TCP port 80 by default
+  or TCP port 443 for HTTPS(HTTP over SSL/TLS)
+  
+  TCP- Transmission Control Protocol
+  IP- Internet Protocol
+  SSL- Security Socket Layer
+  TLS- Transport Layer Security
+  
+ IANA - Internet Assigned Numbers Authority
+ ICANN - Internet Corporation for Assigned Names and Numbers
+ 
+ encrypts -
+ 
+ Clients a.k.a User Agents(U.A)
+ 
+ cache - local copy 
+ tunnels - for encryption
+ 
+ MIME - Multimedia Internet Mail Extensions
