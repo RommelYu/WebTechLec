@@ -1,0 +1,297 @@
+body {
+	margin: 0;
+	margin-top: 48px;
+    font-family: Questrial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.42857;
+	color: white;
+}
+
+#header {
+	margin: 0;
+	width: 150%;
+	height: 10%;
+}
+
+img.url {
+	text-align: center;
+	margin: 0;
+	width: 65%;
+	height: 50%;
+}
+
+img.developer {
+	text-align: left;
+	width: 80%;
+	height: 80%;
+	border-radius: 60%;
+	padding: 10px;
+}
+
+table {
+	text-align: center;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+	border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+	font-family: Questrial;
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+	color: black;
+}
+
+p {
+	font-family: Questrial;
+	margin: auto;
+	width: 65%;
+	padding: 20px;
+	font-size: 110%;
+}
+
+[titular$=lit]{
+	font-family: Questrial;
+	margin: auto;
+	width: 65%;
+	font-size: 110%;
+	padding-left: 15%;
+}
+
+.trial{
+	font-family: Questrial;
+	margin: auto;
+	width: 90%;
+	font-size: 110%;
+	padding-left: 10%;
+}
+
+
+[titular$=mclaren]{
+	font-family: Questrial;
+	margin: auto;
+	width: 100%;
+	padding: 30px;
+	font-size: 200%;
+	color: white;
+    background-color: black;
+    opacity: .8;
+}
+
+[titular$=intro]{
+	font-family: Questrial;
+	margin: auto;
+	width: 67%;
+	padding: 20px;
+	font-size: 200%;
+	color: ghostwhite;
+}
+
+summary[titular$="statcd"] {
+	font-family: Questrial;
+	color: white;
+	margin: auto;
+	width: 35%;
+	background-color: black;
+	font-size: 150%;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+table[titular$="statcd"] {
+	width: 45%;
+}
+
+table[titular$="history"] {
+	width: 55%;
+}
+
+
+summary[titular$="statcd"]:hover {
+	background: white;
+    color: white;
+	background-color: #23819C;
+    cursor:pointer;
+}
+
+summary[titular$="hea"] {
+	font-family: arial;
+	color: white;
+	margin: auto;
+	width: 55%;
+	background-color: lightgrey;
+	font-size: 150%;
+	padding: 0.5em;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+[titular$=list]{
+	font-family: Questrial;
+	margin: auto;
+	width: 50%;
+	font-size: 140%;
+	padding-left: 10%;
+	
+}
+
+summary[titular$="hea"]:hover {
+	background: white;
+    color: white;
+	background-color: lightblue;
+    cursor:pointer;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h1 {
+	font-family: Questrial;
+	font-size: 50px;
+	color: black;
+}
+
+h2 {
+	font-family: Rancho;
+	font-size: 60px;
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+	text-align: center;
+}
+
+h3 {
+	padding: 10px;
+	margin: auto;
+}
+
+.header {
+    margin: auto;
+	text-align: center;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+    width: 100%;
+	overflow: visible;
+	z-index: 1000;
+    opacity: .100;
+}
+
+li {
+    float: left;
+}
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: lightblue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    cursor: pointer;
+    display: block;
+}
+
+footer {
+	color: black;
+	font-family: Questrial;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.parallax1 {
+	background: url("images/bg.jpg") repeat fixed 100%;
+}
+
+.parallax2 {
+	background: url(images/header11.png) fixed 100%;
+}
+
+.parallax-inner1 {
+	padding-top: 0%;
+	padding-bottom: 5%;
+    color: black;
+}
+
+.parallax-inner2 {
+	padding-top: 5%;
+	padding-bottom: 0%;
+    color: black;
+   
+}
+
+.container{
+max-width: 240px;
+height: 240px;
+position: left;
+width: 500px;
+margin: 7px;  
+    display:inline-block;
+
+  
+}
+.container .text{
+
+position: absolute;
+color: white;
+font-size: 20px;
+font-weight: bold;
+top: 75%;
+left: 15%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+

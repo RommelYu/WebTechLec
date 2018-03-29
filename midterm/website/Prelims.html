@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebTech - Homepage</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="icon" href="images/slu.jpg"/>
+	</head>
+<body>
+<img class="header" id="header"src="images/header11.png">
+
+<nav class="heading">
+  <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"><i class="fa fa-sticky-note"></i>LECTURE</a>
+    <div class="dropdown-content">
+      <a href="Prelims.html">PRELIMS</a>
+      <a href="Midterms.html">MIDTERMS</a>
+      <a href=".html">FINALS</a>
+    </div>
+  </li>
+  <li><a href="aboutus.html"><i class="fa fa-user"></i>ABOUT US</a></li>
+    </nav>
+
+	  	<section class="parallax1">
+			<div class="parallax-inner1">
+	<h2 titular="intro"> INTRODUCTION TO THE WORLD WIDE WEB</h2>
+	
+<center><table titular="history">
+<p>The World Wide Web (WWW) or the web is an information space where documents and other web resources are identified by Uniform Source Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.
+<p>The World Wide Web has been central to the development of the Information age and is the primary tool of billions of people use to interact on the Internet.
+<p>World wide web is the universe of network – accessible information, the embodiment of human knowledge.
+  
+  <tr>
+    <th>YEAR</th>
+    <th>DESCRIPTION</th>
+  </tr>
+  <tr>
+    <td>1969</td>
+    <td>Four computers were linked up together, and the ARPANET was born, which later then became the Internet.</td>
+  </tr>
+  <tr>
+    <td>1971</td>
+    <td>The first email sent by Ray Tomlinson, who is known for introducing "@" sign as the locator in email address.</td>
+  </tr>
+  <tr>
+    <td>1989</td>
+    <td>The world Wide Web was invented by Sir Time Berners-Lee while working CERN in Switzerland.</td>
+  </tr>
+  <tr>
+    <td>1991</td>
+    <td>HTTP 0.9</td>
+  </tr>
+  <tr>
+    <td>1996</td>
+    <td>HTTP 1.0</td>
+  </tr>
+  <tr>
+    <td>1998-1999, 2014</td>
+    <td>HTTP 1.1</td>
+  </tr>
+  <tr>
+    <td>2015</td>
+    <td>HTTP 2</td>
+  </tr>
+</table> </center></section></div>
+
+    <center>
+	<h2 titular="mclaren"> HTTP FUNDAMENTALS </h2>
+		<section class="parallax1">
+			<div class="parallax-inner1">
+			
+	<p> HTTP provides support for other functionalities, such as... </p>
+	<ul titular="lit">
+		<br>Cache Control</li> 
+		<br> Content media type specification (MIME)
+		<br> Language and Character Set Specification
+		<br> Content or Transfer Codings 
+		<br> Content Negotiation 
+		<br> Client - Server Protocol Negotiations 
+		<br> Persistent Connections
+		<br> Request Pipelining or Multiplexing
+		<br> Authentication or Authorization 
+	</ul></div></section>
+	
+	<h2 titular="mclaren"> HTTP RESOURCE ADDRESSING </h2>
+		<section class="parallax1">
+			<div class="parallax-inner1">
+			
+	<p>HTTP resources are identified using HTTP URL</p>
+	<img class="url" src="images/scheme.PNG">
+	</div></section>
+
+			<h2 titular="mclaren"> HTTP REQUEST METHODS </h2>
+				<section class="parallax1">
+			<div class="parallax-inner1">
+			
+				<center><table titular="history">
+							<tr> <br>
+								<th>METHOD</th>
+								<th>DESCRIPTION</th>
+							</tr>
+							<tr>
+								<th>OPTIONS</th>
+								<th>Allows you to query
+                                <br>Communication option available for the target resource.
+                                <br>Request target may be *, in which case the request applies to the server in general rather than a specific resource.</th>
+                            
+							</tr>
+							<tr>
+								<th>GET </th>
+								<th>Transfers a  current selected representation of the resouce identified by the request URI: the retrieved resource is returned in the message body of the response as an entity</th>
+							</tr>
+							<tr>
+								<th>HEAD</th>
+								<th>The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response.</th>
+							</tr>
+							<tr>
+								<th>POST </th>
+								<th>UProcessing of the representation enclosed in the message body if the request.
+                                    <br>Submitting HTML form data.
+                                    <br>Chrome handles URL even if it is long.
+                                    <br>Information will not display at URL and using lag.
+                                    <br>Search Friendly URL – query part can’t be generated.
+                                </th>
+							</tr>
+							<tr>
+								<th>PUT </th>
+								<th>Creates or replace the state of the target resource with state defined by the representation enclosed in the request message payload.</th>
+							</tr>
+							<tr>
+								<th>DELETE </th>
+								<th>RRemove the association between the target resource and its current functionality.</th>
+							</tr>
+							<tr>
+								<th>TRACE</th>
+								<th>– It echoes back whatever the server sends.
+                                    <br>Application-level loop-back of the request message.
+                                    <br>Used for testing/troubleshooting of the real response chain.
+                                </th>
+							</tr>
+							<tr>
+								<th>CONNECT</th>
+								<th>Requests the establishment of a tunnel to the destination origin server, and if successful thereafter restrict its behaiour to blind-forwarding of packets in both directions, until the tunnel is closed.
+                                <br>Commonly used to create an end-to-end virtual connection through on or more proxies which can be secured using TLS.
+                                </th>
+							</tr>
+                        </li>
+                    </table>
+				</div>
+            </section>
+        
+			<center>				
+			<h2 titular="mclaren"> HTTP METHOD PROPERTIES </h2>
+					<section class="parallax1">
+			<div class="parallax-inner1">
+			<center> 
+                <ul titular="lit">
+					<p>Request headers contain more information about the resource to be fetched or about the client itself.<br>
+                        <li> Safe Method -  Does not expect if the effect is read-only effect.
+                        <li> Idempotent - Make several or multiple identical request with the method is the same as he effect of a single such request.
+                        <li> Cacheable - Indicated that the response to method can be stored for future reuse.
+                        </ul>
+                        </div>
+                </section>
+               
+    	
+	<center>
+        <h2 titular="mclaren"> HTTP STATUS CODE </h2></center>
+		<section class="parallax2">
+			<div class="parallax-inner2">
+            
+	<details>
+		<summary titular="statcd"> 1xx INFORMATIONAL </summary>
+		<center>
+			<table titular="statcd"> 
+					<tr>
+						<th>STATUS CODE</th>
+						<th>DESCRIPTION</th>
+					</tr>
+					<tr>
+						<th>100</th>
+						<th>Continue</th>
+					</tr>
+					<tr>
+						<th>101</th>
+						<th>Switching Protocols</th>
+					</tr>
+					<tr>
+						<th>102</th>
+						<th>Processing (WebDAV)</th>
+					</tr></table><br>
+		</center>
+	</details>
+            
+	<details>
+		<summary titular="statcd"> 2xx SUCCESS </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>STATUS CODE</th>
+						<th>DESCRIPTION</th>
+					</tr>
+					<tr>
+						<th>200</th>
+						<th>OK</th>
+					</tr>
+					<tr>
+						<th>201</th>
+						<th>Created</th>
+					</tr>
+					<tr>
+						<th>202</th>
+						<th>Accepted</th>
+					</tr>
+					<tr>
+						<th>203</th>
+						<th>Non-Authoritative Information</th>
+					</tr>
+					<tr>
+						<th>204</th>
+						<th>No Content</th>
+					</tr>
+					<tr>
+						<th>205</th>
+						<th>Reset Content</th>
+					</tr>
+					<tr>
+						<th>206</th>
+						<th>Partial Content</th>
+					</tr>
+					<tr>
+						<th>207</th>
+						<th>Multi-Status (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>208</th>
+						<th>Already Reported (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>226</th>
+						<th>IM Used</th>
+					</tr></table><br>
+		</center>
+	</details>
+            
+	<details>
+		<summary titular="statcd"> 3xx REDIRECTION </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>STATUS CODE</th>
+						<th>DESCRIPTION</th>
+					</tr>
+					<tr>
+						<th>300</th>
+						<th>Multiple Choices</th>
+					</tr>
+					<tr>
+						<th>301</th>
+						<th>Moved Permanently</th>
+					</tr>
+					<tr>
+						<th>302</th>
+						<th>Found</th>
+					</tr>
+					<tr>
+						<th>303</th>
+						<th>See Other</th>
+					</tr>
+					<tr>
+						<th>304</th>
+						<th>Not Modified</th>
+					</tr>
+					<tr>
+						<th>305</th>
+						<th>Use Proxy</th>
+					</tr>
+					<tr>
+						<th>307</th>
+						<th>Temporary Redirect</th>
+					</tr>
+					<tr>
+						<th>308</th>
+						<th>Permanent Redirect (experimental)</th>
+					</tr></table><br>
+		</center>
+	</details>
+            
+	<details>
+		<summary titular="statcd"> 4xx CLIENT ERROR </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>STATUS CODE</th>
+						<th>DESCRIPTION</th>
+					</tr>
+					<tr>
+						<th>400</th>
+						<th>Bad Request</th>
+					</tr>
+					<tr>
+						<th>401</th>
+						<th>Unauthorized</th>
+					</tr>
+					<tr>
+						<th>402</th>
+						<th>Payment Required</th>
+					</tr>
+					<tr>
+						<th>403</th>
+						<th>Forbidden</th>
+					</tr>
+					<tr>
+						<th>404</th>
+						<th>Not Found</th>
+					</tr>
+					<tr>
+						<th>405</th>
+						<th>Method Not Allowed</th>
+					</tr>
+					<tr>
+						<th>406</th>
+						<th>Not Acceptable</th>
+					</tr>
+					<tr>
+						<th>407</th>
+						<th>Proxy Authentication Required</th>
+					</tr>
+					<tr>
+						<th>408</th>
+						<th>Request Timeout</th>
+					</tr>
+					<tr>
+						<th>409</th>
+						<th>Conflict</th>
+					</tr>
+					<tr>
+						<th>410</th>
+						<th>Gone</th>
+					</tr>
+					<tr>
+						<th>411</th>
+						<th>Length Required</th>
+					</tr>
+					<tr>
+						<th>412</th>
+						<th>Precondition Failed</th>
+					</tr>
+					<tr>
+						<th>413</th>
+						<th>Request Entity Too Large</th>
+					</tr>
+					<tr>
+						<th>414</th>
+						<th>Request-URI Too Long</th>
+					</tr>
+					<tr>
+						<th>415</th>
+						<th>Unsupported Media Type</th>
+					</tr>
+					<tr>
+						<th>417</th>
+						<th>Expectation Failed</th>
+					</tr></table><br>
+		</center>
+	</details>
+            
+		<details>
+		<summary titular="statcd"> 5xx SERVER ERROR </summary>
+		<center>
+			<table titular="statcd">
+					<tr>
+						<th>STATUS CODE</th>
+						<th>DESCRIPTION</th>
+					</tr>
+					<tr>
+						<th>500</th>
+						<th>Internal Server Error</th>
+					</tr>
+					<tr>
+						<th>501</th>
+						<th>Not Implemented</th>
+					</tr>
+					<tr>
+						<th>502</th>
+						<th>Bad Gateway</th>
+					</tr>
+					<tr>
+						<th>503</th>
+						<th>Service Unavailable</th>
+					</tr>
+					<tr>
+						<th>504</th>
+						<th>Gateway Timeout</th>
+					</tr>
+					<tr>
+						<th>505</th>
+						<th>HTTP Version Not Supported</th>
+					</tr>
+					<tr>
+						<th>506</th>
+						<th>Variant Also Negotiates (Experimental)</th>
+					</tr>
+					<tr>
+						<th>507</th>
+						<th>Insufficient Storage (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>508</th>
+						<th>Loop Detected (WebDAV)</th>
+					</tr>
+					<tr>
+						<th>509</th>
+						<th>Bandwidth Limit Exceeded (Apache)</th>
+					</tr>
+					<tr>
+						<th>510</th>
+						<th>Not Extended</th>
+					</tr>
+					<tr>
+						<th>511</th>
+						<th>Network Authentication Required</th>
+					</tr>
+					<tr>
+						<th>598</th>
+						<th>Network read timeout error</th>
+					</tr>
+					<tr>
+						<th>599</th>
+						<th>Network connect timeout error</th>
+					</tr></table><br>
+		</center>
+	</details>
+  </div>                      
+</section>
+
+<center>
+<footer >
+	<div class="social" >
+		<p>
+        <img id="fb" src="images/Facebook.png" width="35" height="35" alt="facebook">
+        <img id="weheart" src="images/Github.png" width="35" height="35" alt="github">
+        <img id="insta" src="images/Instagram.png" width="35" height="35" alt="instagram">
+        <img id="twitter" src="images/Twitter.png" width="35" height="35" alt="twitter">
+
+	<br><br>
+			All rights reserved &copy; WEB SYSTEM AND TECHNOLOGIES 2018
+			</p>
+		</div>
+</footer>
+</center>
+</body>
+</html>
