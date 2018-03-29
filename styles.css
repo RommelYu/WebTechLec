@@ -11,7 +11,7 @@ body {
 #header {
 	margin: 0;
 	width: 100%;
-	height: 10%;
+	height: 5%;
 
 }
 
@@ -19,14 +19,14 @@ img.url {
 	text-align: center;
 	margin: 0;
 	width: 65%;
-	height: 50%;
+	height: 30%;
 }
 
 img.developer {
-	text-align: center;
-	width: 95%;
-	height: 95%;
-	border-radius: 50%;
+	text-align: left;
+	width: 90%;
+	height: 90%;
+	border-radius: 60%;
 	padding: 10px;
 }
 
@@ -44,27 +44,27 @@ table {
 }
 
 th, td {
-	border: 1px solid #ddd;
+	border: 1px solid #FFFAF0;
     text-align: left;
     padding: 8px;
-	font-family: Questrial;
+	font-family: century;
 }
 
 tr:nth-child(even){
 	background-color: #f2f2f2;
-	color: black;
+	color: #000000;
 }
 
 p {
-	font-family: Questrial;
+	font-family: Century Gothic;
 	margin: auto;
 	width: 65%;
 	padding: 20px;
-	font-size: 110%;
+	font-size: 100%;
 }
 
 [titular$=list]{
-	font-family: Questrial;
+	font-family: Century Gothic;
 	margin: auto;
 	width: 65%;
 	font-size: 150%;
@@ -73,11 +73,12 @@ p {
 }
 
 [titular$=lit]{
-	font-family: Questrial;
+	font-family: century;
 	margin: auto;
-	width: 65%;
-	font-size: 110%;
-	padding-left: 15%;
+	width: 50%;
+	font-size: 100%;
+	padding-left: 20%;
+	text-align:left;
 }
 
 .trial{
@@ -88,42 +89,15 @@ p {
 	padding-left: 10%;
 }
 
-[titular$=lits]{
-	font-family: Questrial;
-	margin: auto;
-	width: 67%;
-	font-size: 110%;
-	padding-left: 5%;
-	color: white;
-}
-
-[titular$=pqrs]{
-	font-family: Questrial;
-	margin: auto;
-	width: 89%;
-	font-size: 90%;
-	padding-left: 2%;
-	color: black;
-}
-
 [titular$=mclaren]{
 	font-family: Questrial;
 	margin: auto;
 	width: 100%;
-	padding: 20px;
-	font-size: 200%;
-	color: white;
-    background-color: black;
-    opacity: .8;
-}
-
-[titular$=intro]{
-	font-family: Questrial;
-	margin: auto;
-	width: 67%;
-	padding: 20px;
-	font-size: 200%;
-	color: white;
+	padding: 10px;
+	margin-top: 20;
+	font-size: 180%;
+	color: #000000;
+    background-color: lightblue;
 }
 
 summary[titular$="statcd"] {
@@ -131,21 +105,22 @@ summary[titular$="statcd"] {
 	color: white;
 	margin: auto;
 	width: 35%;
-	background-color: black;
+	background-color: #000000;
 	font-size: 150%;
-	padding: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	padding: 0px;
+	margin-bottom: 5px;
+	margin-top: 0px;
 }
 
 table[titular$="statcd"] {
-	width: 45%;
+		font-family: Questrial;
+
 }
 
 table[titular$="history"] {
 	width: 55%;
+	font-family: Century Gothic;
 }
-
 
 summary[titular$="statcd"]:hover {
 	background: white;
@@ -156,29 +131,22 @@ summary[titular$="statcd"]:hover {
 
 summary[titular$="hea"] {
 	font-family: Questrial;
-	color: white;
+	color: #000000;
 	margin: auto;
 	width: 55%;
-	background-color: black;
+	background-color: lightcyan;
 	font-size: 150%;
-	padding: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	padding: 0.2em;
+	margin-bottom: 5px;
+	margin-top: 0;
 }
-
 
 summary[titular$="hea"]:hover {
-	background: white;
+	background: #000000;
     color: white;
-	background-color: #23819C;
+	background-color: skyblue;
     cursor:pointer;
 }
-
-.jsscript{
-	margin-left: 45%;
-    margin-right: 40%;
-}
-
 
 hr {
     display: block;
@@ -189,15 +157,9 @@ hr {
     padding: 0;
 }
 
-h1 {
-	font-family: Questrial;
-	font-size: 50px;
-	color: black;
-}
-
 h2 {
-	font-family: Rancho;
-	font-size: 60px;
+	font-family: Century Gothic;
+	font-size: 30px;
 	margin: auto;
 	width: 60%;
 	padding: 10px;
@@ -209,43 +171,34 @@ h3 {
 	margin: auto;
 }
 
-.gopher{
-	height: auto;
-	margin: auto;
-	display: block;
-}
-
-
 .heading{
     list-style-type: none;
-    margin: auto;
+    
 	text-align: center;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: #008080;
 	position: fixed;
 	top: 0;
     width: 100%;
 	overflow: visible;
-	z-index: 1000;
-    opacity: .72;
+    opacity: .50;
 }
 
 li {
     float: left;
 }
 
-
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: #F8F8FF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+	background-color: black;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: #008080;
     cursor:pointer;
 }
 
@@ -256,30 +209,32 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: red;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    padding: 12px 12px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1
-cursor:pointer;}
+.dropdown-content a:hover {
+background-color: #008080;
+opacity: inherit;
+cursor: pointer;
+}
 
 .dropdown:hover .dropdown-content {
-    cursor:pointer;
+    cursor: pointer;
     display: block;
 }
 
 footer {
-	color: black;
+	color: #000000;
 	font-family: Questrial;
 }
 
@@ -289,85 +244,46 @@ footer {
 	border: 0;
 }
 
-/*-----Start Parallax-----*/
 .parallax1 {
 	background: url("images/bg.jpg") repeat fixed 100%;
 }
 
 .parallax2 {
-	background: url(images/SirTim.jpg) fixed 100%;
+	background: url(images/bg.jpg) fixed 100%;
     background-repeat:no-repeat;
-    /* custom background-position */
     background-position:50% 50%;
-    /* ie8- graceful degradation */
     background-position:50% 50%  !important;
-    
-}
-
-.parallax3 {
-	background: url("images/css.jpg")fixed 100%;
-    background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%  !important;
-  
-}
-.parallax4 {
-	background: url("images/rasmus.jpg")  fixed 100%;
-     background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%  !important;
-  
-}
-.parallax5 {
-	background: url("images/SirLee.jpg")  fixed 100%;
-     background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%  !important;
-    
-  
-}
-.parallax6 {
-	background: url("images/brendan.jpg")  fixed 100%;
-     background-repeat:no-repeat;
-    /* custom background-position */
-    background-position:50% 50%;
-    /* ie8- graceful degradation */
-    background-position:50% 50%  !important;
-    
-  
 }
 
 .parallax-inner1 {
-	padding-top: 3%;
-	padding-bottom: 3%;
-    color: black;
+	padding-top: 0%;
+	padding-bottom: 4%;
+    color: #000000;
+}
+
+.parallax-inner2 {
+	padding-top: 5%;
+	padding-bottom: 0%;
+    color: #000000;
    
 }
-/*-----End Parallax-----*/
 
 .container{
-  max-width: 270px;
-    height: 270px;
+  height: 200px;
   position: relative;
-    width: 900px;
-    margin: 7px;  
-    display:inline-block;
+  width: 200px;
+  margin: 1px;  
+  display:inline-block;
 
   
 }
 .container .text{
 
   position: absolute;
-  color: white;
+  color: antiquewhite;
   font-size: 15px;
   font-weight: bold;
-    top: 75%;
+  top: 75%;
     left: 15%;
 }
 a {
