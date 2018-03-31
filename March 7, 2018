@@ -1,0 +1,82 @@
+March 7, 2018
+Webtech Lec
+
+CSS Rule Sets (a.k.a CSS Rules, Style Rules)
+- Consist of a Selector, followed by a brace declaration block, which contains zero or more semi colon( ; ) separated property declarations, which in turns consists of a property name, followed by a colon ( : ) followed by a property name.
+
+CSS Selectors
+selectors -> selectors Level 3
+ * structure used as a condition in a CSS rule
+
+Selector Syntax
+
+Sequence
+
+------------------------------------
+
+Selector Group
+- Comma separated list of selectors representing the union of all elements selected by each of the selectors in the list.
+
+DOM - Document Object Model
+CSSOM - CSS Object Model
+
+Combinators
+-descendant combinators (blanks space, tabs....)
+-child combinators (>)
+- adjacent - sibling combinators (+)
+- General - sibling combinators (~)
+
+Pseudo Element
+- ::after
+
+h1 > h2
+where,
+h1 and h2 - sequence
+> - combinator
+
+ul > li
+where,
+ul nad li - type selector
+> - combinator
+
+.info
+where,
+info - class selector
+
+Pseudo Elements
+* :first-letter, ::first-letter
+* :first-line, ::first-line
+* :before, ::before
+* :after, ::after
+
+:: - supported by CSS3
+
+Simple Selectors
+Universal Selector
+* { color: gray }
+
+Type Selector
+p { ...; }
+
+ID Selectors
+nav#main { }
+#info { }
+
+Class Selectors
+ul. top-ten { }
+.normal { }
+p.lead.quote { }
+
+Pseudo Classes
+- Dynamic Pseudo-classes
+- Dynamic - link Pseudo Class
+- Dynamic - user action  Pseudo Class
+- Target Pseudo Class
+- Language Pseudo Class
+- UI Element States Pseudo Class
+- Structural Pseudo Class
+- Negation Pseudo Class
+
+^ - start of line
+$ - end of line
+* - contains
