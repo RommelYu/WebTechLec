@@ -1,0 +1,27 @@
+CSS - Cascading Style Sheet
+> Language to specify  the presentation (eg. layout, format, fonts, style) of structually 
+markup document.
+> It is developed by HAKON WIUM LIE(html css/CHSS) and BERT BOS 
+(Stream-based style sheet proposal or SSP)
+
+Version:
+CSS 1 (Dec 1996)
+CSS 2 (May 1998)
+CSS 2.1 (June 2011)
+CSS 3 Modular standard approach to css development 
+(as opposed to the monolithic specification of css 2.1)
+
+ HTML StyleSheet
+
+1. Author Style 
+- external (a.k.a linked) stylesheet.
+-embedded stylesheet (a.k.a internal).
+-inline style that can put the element by itself.
+
+2. User Style
+- some browser provide (non-standard) alternatives through plugins or extension.
+
+3. User Agent
+- sample default user agent stylesheet from css 2.1
+- the source of the style denotes its origin, which is used in 
+determining its precedence in the cascade.
