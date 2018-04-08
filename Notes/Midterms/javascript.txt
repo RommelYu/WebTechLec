@@ -1,0 +1,48 @@
+JAVASCRIPT
+Developed circa 1995 by Brendan Eich at Netscape Communications as the scripting language. Formerly called Mocha, Then LiveScript, The JavaScript.</p>
+Standardized as ECMAScript by ECMA International
+Latest version : Javascript 1.8.1, ECMAScript 5 [ECMA-262 5th Edition].
+Common version :Javascript 1.5, Jscript 5.5, ECMAScript v3 [ECMA-262 3rd Edition]
+JavaScript Frameworks :jQuery, Mootools, Dojo Toolkit, Prototype, script.aculo.us.
+
+Basic language features:
+Paradigm
+- Object-oriented, functional, imperative scripting.
+
+Java/ C like Syntax
+-implicit semicolon section for statement termination
+-Identifiers are alphanumeric and $ characters.
+-Single line or block comments.
+
+Type system and variable scoping rules
+-Dynamic typing
+-Global or local scope
+-Data Types: 
+  primative types
+     -Undenfined and null
+     -Numbers (Decimal, hexadecimal, notation)
+     -Strings
+     -Boolean(true, false)
+  composite types
+     - Core Javascript Objects
+       - arrays
+       - Functions
+       - boolean, object,string, date, math, global, number.
+     -DOM Objects
+       - Attr, Comment, DOMException, DOMImplementation, DocumentFragment,
+         Element, Event, Anchor, Applet,  Style, Text, TextArea, Form, Image, 
+         Input, Layer, Link, Node, Option
+
+Keywords
+  - break, case, catch, continue, default, delete, do, else, finally, for, 
+    function, if, in, instanceof, new, return, switch, this, throw, try, 
+    typeof, var, void, with 
+Reserved words (currently unused)  
+  - abstract, Boolean, byte, char, class, const, debugger, float  
+Statements and control structures 
+   - if-else 
+   - var
+   - try-catch-finally, throw
+   - with 
+   - while, do-while, for, for-in, break, continue 
+   - switch-case-default-break
