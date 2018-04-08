@@ -1,0 +1,48 @@
+March 3, 2018
+Webtech Lec
+
+CSS(Cascading Style Sheet)
+- Language used to specify the presentation (e.g. layout, formatting, fonts...)
+
+Developed by Hakom Wium Lie (CHSS) and Bert Bos (SSP)
+CHSS - Cascading HTML Style Sheet
+SSP - Stream-based Stylesheet Proposal
+
+Version History:
+- CSS Level 1 (Dec. 1996) CSS 1
+- CSS Level 2 (May 1998) CSS 2
+- CSS Level 2 Revision 1 (June 2011) CSS 2.1
+- CSS Level 3
+  * Modular approach to CSS development (as apposed to the monolithic specification of CSS 2.1)
+
+HTML Stylesheets
+- sources of styles for HTML Documents another styes
+ * external (a.k.a linked) stylesheets (recommended)
+ * embedded (a.k.a internal) stylesheets
+ * inline style
+e.g.
+<h1 style="">
+
+</h1>
+
+<style scoped>
+- only on this area
+
+User Styles
+- Some browsers provides (non-standard) alternatives through plug-ins / extensions (e.g. Stylish)
+
+User Agent Styles
+- Sample default user agent stylesheet from CSS 2.1
+
+* The sources of a styl denotes its origin, which is used to determine its precedence in the cascade
+
+CSS Statements
+- At Rules
+* @charset
+* @import
+* @namespace
+* @media
+* @supports
+* @page
+* @font-face
+* @keyframes -> for animation
